@@ -10,11 +10,29 @@
   body{
     background-color: bisque;
   }
+  .logo{
+    color: #FE0004;
+  }
+  .icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  a{
+    text-decoration: none;
+    color: gray;
+    justify-content: space-between;
+    position: center;
+  }
   .dropdown{
     margin: 20px;
   }
   .products1{
     margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between -3;
+    align-items: baseline;
   }
   .products2{
     margin: 20px;
@@ -56,13 +74,28 @@
     <div class="header">
         <nav class="navbar bg-body-tertiary">
             <div class="container-fluid">
-              <a class="navbar-brand">Navbar</a>
+              <a class="navbar-brand"><span class="logo"><b>Li</b></span>bra</a>
               <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+                <input class="form-control me-2" type="search" placeholder="Search products" aria-label="Search">
+                <a href="search products"><button class="btn btn-outline-success" type="submit">Search</button></a>
               </form>
-              <div>
-                <button>download me</button>
+              <div class="icons">
+                <div>
+                  <img src="images/user-solid-24.png" alt="">
+                  <a href="evening gowns"><h6>My Account</h6></a>
+                </div>
+                <div>
+                  <img src="images/message-rounded-solid-24.png" alt="">
+                  <a href="#"><h6>Contact Us</h6></a>
+                </div>
+                <div>
+                  <img src="images/store-regular-24.png" alt="">
+                  <a href="#"><h6>Orders</h6></a>
+                </div> 
+                <div>
+                  <img src="images/cart-solid-24.png" alt="">
+                  <a href="#"><h6>Cart</h6></a>
+                </div>            
               </div>
             </div>
         </nav>
@@ -77,31 +110,22 @@
            <span class="visually-hidden">Toggle Dropdown</span>
        </button>
        <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Evening Gowns</a></li>
-        <li><a class="dropdown-item" href="#">Cocktail Dresses</a></li>
-        <li><a class="dropdown-item" href="#">Casual Dresses</a></li>
-        <li><a class="dropdown-item" href="#">Bodycon Dresses</a></li>
-        <li><a class="dropdown-item" href="#">Maxi Dresses</a></li>
-        <li><a class="dropdown-item" href="#">Sundresses</a></li>
-        <li><a class="dropdown-item" href="#">Shirt Dresses</a></li>
-        <li><a class="dropdown-item" href="#">Crop Tops</a></li>
-        <li><a class="dropdown-item" href="#">Blouses & Shirts</a></li>
-        <li><a class="dropdown-item" href="#">Tank Tops</a></li>
-        <li><a class="dropdown-item" href="#">Off-Shoulder Tops</a></li>
-        <li><a class="dropdown-item" href="#">Ruffle Sleeve Tops</a></li>
-        <li><a class="dropdown-item" href="#">Peplum Tops</a></li>
-        <li><a class="dropdown-item" href="#">Button-Up Blouses</a></li>
-        <li><a class="dropdown-item" href="#">Midi Skirts</a></li>
-        <li><a class="dropdown-item" href="#">Mini Skirts</a></li>
-        <li><a class="dropdown-item" href="#">Denim Skirts</a></li>
-        <li><a class="dropdown-item" href="#">Pleated Skirts</a></li>
-        <li><a class="dropdown-item" href="#">A-Line Skirts</a></li>
-        <li><a class="dropdown-item" href="#">Pencil Skirts</a></li>
+        <li><a class="dropdown-item" href="#">Dresses</a></li>
+        <li><a class="dropdown-item" href="#">Tops</a></li>
+        <li><a class="dropdown-item" href="#">Skirts</a></li>
+        <li><a class="dropdown-item" href="#">Pants & Jeans</a></li>
+        <li><a class="dropdown-item" href="#">Outerwear</a></li>
+        <li><a class="dropdown-item" href="#">Footwear</a></li>
+        <li><a class="dropdown-item" href="#">Accessories</a></li>
+        <li><a class="dropdown-item" href="#">Lingerie & Sleepwear</a></li>
+        <li><a class="dropdown-item" href="#">Activewear</a></li>
+        <li><a class="dropdown-item" href="#">Swimwear</a></li>
        </ul>
        </div>
      </div>
      <!-- dropdown ends here -->
 
+     <hr>
      <!-- slider begins here -->
       <div>
         <div id="carouselExampleDark" class="carousel carousel-dark slide">
@@ -145,17 +169,16 @@
       </div>
      <!-- slinder ends here -->
 
-     <hr>
      <div class="products1">
-      <h3>Most Trending Products - <h6>Istant Pick and Pay</h6></h3>
+      <h3>Most Trending Products - <h5>Istant Pick and Pay</h5></h3>
      </div>
     
      <!-- cards begin here -->
-    <div>
+    <div class="container">
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="images/graphic-woman-dress-trendy-design-white-background.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -164,7 +187,7 @@
         </div>
           <div class="col">
             <div class="card">
-              <img src="..." class="card-img-top" alt="...">
+              <img src="images/still-life-spring-wardrobe-switch.jpg" class="card-img-top" alt="...">
               <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -173,7 +196,7 @@
         </div>
           <div class="col">
             <div class="card">
-              <img src="..." class="card-img-top" alt="...">
+              <img src="images/view-shoe-rack-stacking-pair-footwear.jpg" class="card-img-top" alt="...">
               <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
@@ -182,7 +205,7 @@
         </div>
         <div class="col">
           <div class="card">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="images/model-career-kit-still-life (1).jpg" class="card-img-top" alt="...">
             <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -198,7 +221,7 @@
      <div class="row row-cols-1 row-cols-md-3 g-4">
       <div class="col">
         <div class="card">
-          <img src="..." class="card-img-top" alt="...">
+          <img src="images/dress1.webp" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -207,7 +230,7 @@
       </div>
         <div class="col">
           <div class="card">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="images/dress2.webp" class="card-img-top" alt="...">
             <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -216,7 +239,7 @@
       </div>
         <div class="col">
           <div class="card">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="images/graphic-woman-dress-trendy-design-white-background.jpg" class="card-img-top" alt="...">
             <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
@@ -225,7 +248,7 @@
       </div>
       <div class="col">
         <div class="card">
-          <img src="..." class="card-img-top" alt="...">
+          <img src="images/dress4.png" class="card-img-top" alt="...">
           <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
